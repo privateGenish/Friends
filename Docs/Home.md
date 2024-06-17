@@ -3,6 +3,7 @@
 # Timeline
 Currently working on: `Sprint 1: Architecture: Component Level Front-Back Architecture`
 
+```mermaid
 timeline
 %%{init: { 'logLevel': 'debug', 'theme': 'forest' } }%%
     title Sprints
@@ -27,7 +28,8 @@ timeline
         : UI Components
         : Animations
         : Unit Tests
-
+```
+```mermaid
 timeline
 %%{init: { 'logLevel': 'debug', 'theme': 'forest' } }%%
     section Back End Development (Sprint 3)
@@ -55,3 +57,4 @@ timeline
     : locate bugs \ drops in performance
     : Roadmap future developments
     QA: Virtual Pipeline for any production push
+```
