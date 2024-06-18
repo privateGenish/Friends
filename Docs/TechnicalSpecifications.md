@@ -52,4 +52,4 @@
 
 
 ## Flow Chart Description
-https://www.figma.com/design/GYc5CDlVQl86O59yi5oChm/Friends-Docs-Design-files?node-id=0-1&t=CdcXMiiEtt8wto6Y-1
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FGYc5CDlVQl86O59yi5oChm%2FFriends-Docs-Design-files%3Fnode-id%3D0-1%26t%3DCdcXMiiEtt8wto6Y-1" allowfullscreen></iframe>
