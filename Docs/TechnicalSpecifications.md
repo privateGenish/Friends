@@ -52,5 +52,4 @@
 
 
 ## Flow Chart Description
-![Flow Chart Description of the User Flow](../Assets/User_Flow.png);
-
+![Flow Chart Graph](../Assets/User_Flow.html)

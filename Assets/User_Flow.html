@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowchart Visualization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .flowchart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .box {
+            border: 2px solid #000;
+            padding: 10px;
+            margin: 10px;
+            background-color: #fff;
+            text-align: center;
+            width: 250px;
+        }
+        .subgraph-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .line {
+            width: 2px;
+            height: 20px;
+            background-color: #000;
+            margin: 5px auto;
+        }
+        .branch {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .branch .line {
+            height: 2px;
+            width: 20px;
+        }
+        .conditional {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .conditional .line {
+            height: 2px;
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flowchart">
+        <!-- User Onboarding -->
+        <div class="box">
+            <div class="subgraph-title">User Onboarding</div>
+            User downloads and opens the Friends app
+        </div>
+        <div class="line"></div>
+        <div class="box">
+            Prompt to sign up or log in
+        </div>
+        <div class="branch">
+            <div class="box">Sign up<br>Enter phone number</div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="box">Log in<br>Enter login credentials</div>
+        </div>
+        <div class="line"></div>
+        <div class="box">
+            OTP is sent to the phone for verification
+        </div>
+        <div class="line"></div>
+        <div class="box">
+            Enter OTP
+        </div>
+        <div class="line"></div>
+        <div class="box">
+            Create profile by uploading face picture, two additional photos, and filling in bio
+        </div>
+        <div class="line"></div>
+        <div class="box">
+            Profile is created
+        </div>
+        <div class="line"></div>
+        <div class="box">
+            User is taken to the home screen to start exploring the app
+        </div>
+
+        <!-- Group Formation -->
+        <div class="box">
+            <div class="subgraph-title">Group Formation</div>
+            User selects the option to create a new group
+        </div>
+        <div class="line"></div>
+        <div class="box">
+            Fill in group details: name, description, category
+        </div>
+        <div class="line"></div>
+        <div class="box">
+            Invite friends to join the group
+        </div>
+        <div class="line"></div>
+        <div class="box">
+            Waiting for friends to accept invitations
+        </div>
+        <div class="line"></div>
+        <div class="box">
+            At least one friend accepts the invitation
+        </div>
+        <div class="line"></div>
+        <div class="box">
+            Group becomes active
+        </div>
+        <div class="line"></div>
+        <div class="box">
+            Group members can edit the group profile
+        </div>
+        <div class="line"></div>
+        <div class="box">
+            Start looking for other groups to match with
+        </div>
+
+        <!-- Matching Process -->
+        <div class="box">
+            <div class="subgraph-title">Matching Process</div>
+            Browse or search for other groups based on interests or categories
+        </div>
+        <div class="line"></div>
+        <div class="box">
+            Swipe right to indicate interest or left to pass
+        </div>
+        <div class="line"></div>
+        <div class="conditional">
+            <div class="line"></div>
+            <div class="box">Did at least half of the group members swipe right?</div>
+            <div class="line"></div>
+        </div>
+        <div class="branch">
+            <div class="box">Yes<br>Other group receives a notification of interest</div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="box">No<br>Back to browsing</div>
+        </div>
+        <div class="line"></div>
+        <div class="conditional">
+            <div class="line"></div>
+            <div class="box">Did at least half of the other group members swipe right?</div>
+            <div class="line"></div>
+        </div>
+        <div class="branch">
+            <div class="box">Yes<br>Match is made</div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="box">No<br>Back to browsing</div>
+        </div>
+        <div class="line"></div>
+        <div class="box">
+            Matched groups can start chatting or planning activities together
+        </div>
+
+        <!-- Messaging Flow -->
+        <div class="box">
+            <div class="subgraph-title">Messaging Flow</div>
+            Two chat options available: Mutual Group Chat or Individual Chat
+        </div>
+        <div class="branch">
+            <div class="box">Mutual Group Chat: Shared group chat for discussions and activities</div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="box">Individual Chat: Private one-on-one conversations</div>
+        </div>
+        <div class="branch">
+            <div class="box">Text Messaging: Send text messages in group chats</div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="box">Media Messaging: Share photos, videos, and other media</div>
+        </div>
+        <div class="line"></div>
+        <div class="box">
+            Internal Group Discussions: Private communication within the group
+        </div>
+        <div class="line"></div>
+        <div class="branch">
+            <div class="box">Commenting on Matches: Discuss potential matches or interactions</div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="box">General Messaging: Plan activities and share thoughts internally</div>
+        </div>
+    </div>
+</body>
+</html>
